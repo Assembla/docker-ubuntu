@@ -6,4 +6,5 @@ RUN \
     apt-get \
         -o Dpkg::Options::="--force-confnew" \
         --force-yes \
-        -fuy dist-upgrade
+        -fuy dist-upgrade && \
+    apt-get clean
