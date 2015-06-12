@@ -8,3 +8,5 @@ RUN \
         --force-yes \
         -fuy dist-upgrade && \
     apt-get clean
+RUN apt-get install --no-install-recommends -y curl git && \
+    apt-get clean
